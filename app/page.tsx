@@ -469,6 +469,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "flex-start",
+    flexWrap: "wrap",
     gap: 16,
     marginBottom: 16
   },
@@ -489,8 +490,9 @@ const styles: Record<string, React.CSSProperties> = {
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "minmax(0, 1.4fr) minmax(280px, 0.8fr)",
-    gap: 14
+    gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+    gap: 14,
+    alignItems: "start"
   },
   kicker: {
     textTransform: "uppercase",
