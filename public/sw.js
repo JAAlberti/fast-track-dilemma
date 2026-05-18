@@ -1,5 +1,5 @@
 /* Fast-Track Dilemma / Megaproject LAB PWA cache */
-const CACHE_NAME = "fast-track-dilemma-v3";
+const CACHE_NAME = "fast-track-dilemma-v4";
 const ASSETS = ["/", "/manifest.json"];
 
 self.addEventListener("install", (event) => {
