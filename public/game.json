@@ -1,465 +1,616 @@
 {
   "meta": {
-    "title": "The Fast Track Dilemma",
-    "subtitle": "Pre-investment decisions in a flagship corridor project",
-    "trainerPin": "6230",
+    "title": "Fast-Track Dilemma: Megaproject LAB Edition",
+    "subtitle": "A decision simulation on how early choices shape megaproject risk",
     "intro": [
-      "You are part of the central government team preparing a flagship transport corridor.",
-      "The project will be built regardless. Your choices only determine how costly, conflictive, and fiscally painful it becomes.",
-      "Every option is defensible. That is the problem."
+      "You are part of a Megaproject LAB review team advising decision-makers before a politically strategic infrastructure project moves forward.",
+      "At each step, the context will expand and the pressure to move fast will increase.",
+      "Your choices will not stop the project. They will change how risk is created, transferred, hidden, or absorbed."
     ],
-    "revealTitle": "Real-case reveal (trainer mode)",
-    "revealBody": [
-      "This simulation was based on a real megaproject implemented in Latin America in the 2000s.",
-      "It was delivered, but costs rose far beyond early estimates, additional funding required high-level political and legislative intervention, and environmental/social issues were managed largely reactively.",
-      "The learning point is not ‘bad people’. It is how pressure, timing, and incentives make risky shortcuts feel responsible."
-    ],
-    "disclaimer": "Fictionalized for training. No real names are used during gameplay."
+    "disclaimer": "Training simulation. The scenario is fictionalized and based on recurring patterns observed in real megaprojects.",
+    "finalNote": "This simulation is not about ranking participants. It is about making visible how institutional pressure, incomplete information, and incentives shape risk allocation in megaprojects.",
+    "contactEmail": "REPLACE_WITH_YOUR_EMAIL@example.com",
+    "contactSubject": "Megaproject LAB simulation feedback",
+    "contactBody": "Hi,\n\nI played the Megaproject LAB simulation and would like to share some ideas.\n\nMy comments:"
   },
   "risks": [
-    { "key": "econ", "label": "Economic viability" },
-    { "key": "fiscal", "label": "Fiscal exposure" },
-    { "key": "envsoc", "label": "Environmental & social" },
-    { "key": "gov", "label": "Governance & institutions" },
-    { "key": "delivery", "label": "Delivery (cost/time)" }
+    {
+      "key": "political_continuity",
+      "label": "Political continuity risk",
+      "group": "Political and institutional"
+    },
+    {
+      "key": "stakeholder_conflict",
+      "label": "Stakeholder conflict risk",
+      "group": "Political and institutional"
+    },
+    {
+      "key": "legitimacy",
+      "label": "Legitimacy risk",
+      "group": "Political and institutional"
+    },
+    {
+      "key": "coordination",
+      "label": "Coordination risk",
+      "group": "Political and institutional"
+    },
+    {
+      "key": "institutional_erosion",
+      "label": "Institutional erosion risk",
+      "group": "Political and institutional"
+    },
+    {
+      "key": "design_maturity",
+      "label": "Design maturity risk",
+      "group": "Project definition"
+    },
+    {
+      "key": "cost_delay",
+      "label": "Cost overruns & delay risk",
+      "group": "Implementation and finance"
+    },
+    {
+      "key": "fiscal_exposure",
+      "label": "Fiscal exposure risk",
+      "group": "Implementation and finance"
+    },
+    {
+      "key": "contractual_stress",
+      "label": "Contractual stress risk",
+      "group": "Implementation and finance"
+    },
+    {
+      "key": "economic_efficiency",
+      "label": "Economic efficiency risk",
+      "group": "Performance"
+    },
+    {
+      "key": "operational_sustainability",
+      "label": "Operational sustainability risk",
+      "group": "Performance"
+    }
   ],
   "events": [
     {
       "id": 1,
-      "title": "Momentum Is Already Public",
+      "title": "The Flagship Mandate",
       "context": [
-        "After a regional summit, senior officials publicly committed to deliver the corridor within the current term.",
-        "Formally, the project is not yet approved. Politically, it already is."
+        "The project has become a flagship commitment before the technical case is fully developed.",
+        "Senior officials want a clear signal that the project is moving."
       ],
       "options": [
         {
-          "text": "Integrate the project into the national investment strategy and re-prioritize the pipeline transparently.",
+          "text": "Frame the mandate around the problem to be solved, not a predetermined solution.",
           "feedback": [
-            "Technically sound: alignment improves coherence and opportunity-cost discipline.",
-            "Politically risky: it slows the headline and exposes trade-offs.",
-            "Irony: you have chosen truth in a world that rewards speed."
+            "You preserve room for alternatives and reduce early lock-in.",
+            "This may feel less politically decisive, but it improves the quality of later choices."
           ],
-          "impact": { "econ": -1, "fiscal": -1, "envsoc": -1, "gov": -1, "delivery": 1 }
+          "impact": {
+            "political_continuity": 1,
+            "coordination": -1,
+            "legitimacy": -1,
+            "economic_efficiency": -1
+          }
         },
         {
-          "text": "Treat it as a strategic exception and run a parallel fast-track while ‘alignment’ catches up later.",
+          "text": "Accept the flagship narrative, but keep technical qualification language in the decision note.",
           "feedback": [
-            "Common in practice: preserves momentum while keeping paperwork moving.",
-            "Creates a governance gap: exceptions become the new rule.",
-            "Irony: you have discovered the administrative equivalent of ‘we’ll fix it in post’."
+            "This balances momentum with some analytical caution.",
+            "The risk is that the headline becomes stronger than the qualifications."
           ],
-          "impact": { "econ": 1, "fiscal": 1, "envsoc": 0, "gov": 2, "delivery": -1 }
+          "impact": {
+            "political_continuity": 1,
+            "legitimacy": 1,
+            "coordination": 1,
+            "economic_efficiency": 1
+          }
         },
         {
-          "text": "Advance immediately; planning alignment can be done once the project is ‘irreversible’.",
+          "text": "Announce the preferred solution and use the lab process to support implementation readiness.",
           "feedback": [
-            "Fastest path to procurement; also fastest path to lock-in.",
-            "You trade decision-quality for political certainty.",
-            "Irony: you have reduced uncertainty by refusing to look at it."
+            "You create clarity and momentum.",
+            "You also make later alternatives analysis politically decorative rather than substantive."
           ],
-          "impact": { "econ": 2, "fiscal": 2, "envsoc": 1, "gov": 2, "delivery": -2 }
+          "impact": {
+            "political_continuity": 2,
+            "legitimacy": 2,
+            "institutional_erosion": 2,
+            "economic_efficiency": 2
+          }
         }
       ]
     },
     {
       "id": 2,
-      "title": "Objectives: Narrow or Mythic?",
+      "title": "Strategic Fit and Alternatives",
       "context": [
-        "Regional leaders insist the corridor must deliver integration, development, and national presence—not just transport efficiency.",
-        "A narrower objective might weaken the coalition supporting the project."
+        "The project is presented as transformational. Competing options exist, but none has the same political visibility.",
+        "The team must decide how seriously to compare alternatives."
       ],
       "options": [
         {
-          "text": "Define a clear transport objective and separate broader regional development programs (with their own logic and budgets).",
+          "text": "Run a structured alternatives analysis, including lower-cost and staged options.",
           "feedback": [
-            "Improves appraisal quality: you can test benefits against costs credibly.",
-            "May reduce political enthusiasm because it limits the narrative.",
-            "Irony: you chose measurable goals over inspirational ones."
+            "This improves strategic fit and helps expose opportunity costs.",
+            "It may create discomfort if the flagship option is not clearly superior."
           ],
-          "impact": { "econ": -1, "fiscal": 0, "envsoc": 0, "gov": -1, "delivery": 1 }
+          "impact": {
+            "political_continuity": 1,
+            "economic_efficiency": -2,
+            "fiscal_exposure": -1,
+            "legitimacy": -1,
+            "design_maturity": -1
+          }
         },
         {
-          "text": "Include broader development effects as core project benefits (timber/agriculture/tourism ‘uplift’).",
+          "text": "Compare alternatives at a high level while keeping the flagship option as the reference case.",
           "feedback": [
-            "Makes the project easier to justify with limited demand certainty.",
-            "Increases the risk of benefit overstatement and later disappointment.",
-            "Irony: your spreadsheet now contains hope with three decimals."
+            "This preserves the appearance of analysis and keeps the process moving.",
+            "It weakens the ability to challenge the preferred solution."
           ],
-          "impact": { "econ": 2, "fiscal": 1, "envsoc": 1, "gov": 0, "delivery": 0 }
+          "impact": {
+            "economic_efficiency": 1,
+            "legitimacy": 1,
+            "institutional_erosion": 1
+          }
         },
         {
-          "text": "Keep objectives broad and intentionally flexible to preserve political support across stakeholders.",
+          "text": "Treat alternatives as already resolved and focus only on optimizing the flagship project.",
           "feedback": [
-            "Coalition-building move: everyone can see their preferred project in it.",
-            "Accountability becomes difficult because success is undefined.",
-            "Irony: the project now has objectives like a national anthem—beautiful, and non-falsifiable."
+            "You gain speed and political coherence.",
+            "But you lose the main protection against building the wrong project correctly."
           ],
-          "impact": { "econ": 2, "fiscal": 1, "envsoc": 1, "gov": 2, "delivery": 0 }
+          "impact": {
+            "political_continuity": 1,
+            "economic_efficiency": 3,
+            "legitimacy": 2,
+            "institutional_erosion": 2
+          }
         }
       ]
     },
     {
       "id": 3,
-      "title": "Demand: Reality vs Narrative",
+      "title": "Benefits Under Pressure",
       "context": [
-        "Early political messaging assumes major international freight will use the corridor.",
-        "A technical team warns that alternative routes may remain more competitive."
+        "Demand and benefits are uncertain, but the project needs a compelling economic story.",
+        "Optimistic assumptions would make approval and financing easier."
       ],
       "options": [
         {
-          "text": "Commission independent logistics and traffic studies; accept the timeline hit.",
+          "text": "Use independent demand analysis and show a realistic range of benefits.",
           "feedback": [
-            "Reduces the risk of ‘build it and they will come’ appraisal errors.",
-            "May produce inconvenient results and political friction.",
-            "Irony: you asked reality for feedback. It is not always polite."
+            "You reduce economic-efficiency risk and make uncertainty explicit.",
+            "The political story becomes less elegant, but more credible."
           ],
-          "impact": { "econ": -2, "fiscal": -1, "envsoc": 0, "gov": -1, "delivery": 1 }
+          "impact": {
+            "economic_efficiency": -2,
+            "legitimacy": -1,
+            "political_continuity": 1,
+            "fiscal_exposure": -1
+          }
         },
         {
-          "text": "Use proxy indicators and regional integration assumptions; document uncertainty but proceed.",
+          "text": "Use optimistic but documented scenarios to support the case for action.",
           "feedback": [
-            "Looks balanced on paper and keeps momentum.",
-            "Uncertainty stays unresolved—then migrates into contract disputes and fiscal exposure.",
-            "Irony: you have carefully documented the reasons you might be wrong."
+            "This is defensible if uncertainty is clearly stated.",
+            "In practice, optimistic scenarios often become the remembered version of the project."
           ],
-          "impact": { "econ": 1, "fiscal": 1, "envsoc": 0, "gov": 0, "delivery": 0 }
+          "impact": {
+            "economic_efficiency": 2,
+            "fiscal_exposure": 1,
+            "legitimacy": 1
+          }
         },
         {
-          "text": "Adopt optimistic demand assumptions to avoid weakening the strategic case.",
+          "text": "Include broad transformation effects as core benefits to reflect the strategic nature of the project.",
           "feedback": [
-            "Approval becomes easier; financing becomes more ‘plausible’.",
-            "You increase the probability of later economic underperformance.",
-            "Irony: your forecast is now a political speech wearing a lab coat."
+            "The project becomes easier to justify.",
+            "The benefit case becomes harder to verify and easier to overstate."
           ],
-          "impact": { "econ": 3, "fiscal": 1, "envsoc": 0, "gov": 1, "delivery": -1 }
+          "impact": {
+            "economic_efficiency": 3,
+            "legitimacy": 2,
+            "fiscal_exposure": 1,
+            "operational_sustainability": 1
+          }
         }
       ]
     },
     {
       "id": 4,
-      "title": "Environmental & Social: Timing the Spotlight",
+      "title": "Stakeholders and Legitimacy",
       "context": [
-        "The corridor crosses sensitive ecosystems and complex social areas.",
-        "Some advisors warn that a comprehensive assessment could mobilize opposition before procurement."
+        "Several stakeholders could be affected by the project, but early engagement may reveal conflict before approval.",
+        "Some advisors argue that consultation should wait until the project is irreversible."
       ],
       "options": [
         {
-          "text": "Conduct a full ESIA upfront, including indirect impacts and mitigation programs.",
+          "text": "Map stakeholders early and open structured dialogue before final commitment.",
           "feedback": [
-            "Best practice: identifies risks early and enables credible mitigation.",
-            "Creates political exposure and potential delay.",
-            "Irony: you chose prevention, society’s least fashionable investment."
+            "You surface conflict early, when it is still manageable.",
+            "It may slow the process, but it strengthens legitimacy."
           ],
-          "impact": { "econ": 0, "fiscal": 0, "envsoc": -3, "gov": -1, "delivery": 1 }
+          "impact": {
+            "stakeholder_conflict": -2,
+            "legitimacy": -2,
+            "coordination": -1,
+            "cost_delay": 1
+          }
         },
         {
-          "text": "Phase the ESIA by section; focus on direct impacts first to keep procurement moving.",
+          "text": "Communicate benefits first, then consult on mitigation measures later.",
           "feedback": [
-            "Common compromise: reduces immediate friction.",
-            "Indirect impacts often arrive anyway—just later and louder.",
-            "Irony: you have scheduled environmental reality for a later meeting."
+            "This protects momentum and keeps the narrative positive.",
+            "Stakeholders may experience consultation as validation rather than participation."
           ],
-          "impact": { "econ": 0, "fiscal": 1, "envsoc": 2, "gov": 1, "delivery": 0 }
+          "impact": {
+            "stakeholder_conflict": 2,
+            "legitimacy": 2,
+            "coordination": 1
+          }
         },
         {
-          "text": "Proceed with basic safeguards now; refine mitigation once construction starts.",
+          "text": "Limit engagement to supportive actors until the project has secured approval.",
           "feedback": [
-            "Fastest path to breaking ground.",
-            "Highest likelihood of reactive mitigation, reputational damage, and costly adjustments.",
-            "Irony: you have successfully postponed the inevitable—at interest."
+            "You reduce short-term friction.",
+            "You increase the chance of delayed conflict, reputational damage, and reactive mitigation."
           ],
-          "impact": { "econ": 0, "fiscal": 2, "envsoc": 3, "gov": 2, "delivery": -1 }
+          "impact": {
+            "stakeholder_conflict": 3,
+            "legitimacy": 3,
+            "institutional_erosion": 1,
+            "cost_delay": 1
+          }
         }
       ]
     },
     {
       "id": 5,
-      "title": "Engineering Maturity: ‘Good Enough’",
+      "title": "Coordination Architecture",
       "context": [
-        "Full engineering takes time. Approval now preserves momentum and signals seriousness.",
-        "Technical staff warn that feasibility-level costing is too thin for a megaproject in difficult terrain."
+        "The project cuts across agencies, levels of government, and technical domains.",
+        "No single institution naturally owns all interfaces."
       ],
       "options": [
         {
-          "text": "Complete full feasibility and preliminary engineering before procurement.",
+          "text": "Create a formal coordination unit with authority, escalation rules, and shared information protocols.",
           "feedback": [
-            "Improves cost accuracy and reduces scope ambiguity.",
-            "Risks losing the political window.",
-            "Irony: you chose to be right later rather than fast now."
+            "You reduce coordination failures and make interfaces visible.",
+            "This requires time, mandate clarity, and political support."
           ],
-          "impact": { "econ": -1, "fiscal": -2, "envsoc": -1, "gov": -1, "delivery": 2 }
+          "impact": {
+            "coordination": -3,
+            "institutional_erosion": -1,
+            "cost_delay": 1,
+            "legitimacy": -1
+          }
         },
         {
-          "text": "Approve based on feasibility-level cost estimates; rely on contract management to handle uncertainties.",
+          "text": "Let each agency manage its component and coordinate through periodic meetings.",
           "feedback": [
-            "Keeps the process moving while ‘managing’ unknowns.",
-            "Increases likelihood of claims, re-measurement, and cost escalation.",
-            "Irony: you have promoted uncertainty to a line item."
+            "This is easy to launch and institutionally familiar.",
+            "Interface risks can remain hidden until implementation."
           ],
-          "impact": { "econ": 1, "fiscal": 2, "envsoc": 0, "gov": 1, "delivery": 1 }
+          "impact": {
+            "coordination": 2,
+            "cost_delay": 1,
+            "contractual_stress": 1
+          }
         },
         {
-          "text": "Approve conceptually and let the contractor refine the design under time pressure.",
+          "text": "Use informal political steering to resolve issues quickly as they arise.",
           "feedback": [
-            "Maximizes speed and lock-in.",
-            "You will buy information later—at monopoly prices.",
-            "Irony: you have outsourced your uncertainty to your future self."
+            "Fast decisions are possible.",
+            "But informal steering can weaken institutional roles and blur accountability."
           ],
-          "impact": { "econ": 2, "fiscal": 3, "envsoc": 1, "gov": 2, "delivery": 0 }
+          "impact": {
+            "coordination": 2,
+            "institutional_erosion": 3,
+            "legitimacy": 1,
+            "contractual_stress": 1
+          }
         }
       ]
     },
     {
       "id": 6,
-      "title": "Gatekeeping: The Standard System",
+      "title": "Design Maturity",
       "context": [
-        "The national public investment system requires sequential approvals and minimum documentation.",
-        "Project sponsors argue the system is too slow for ‘transformational’ projects."
+        "Technical studies are incomplete, but waiting for mature design could push approval beyond the political window.",
+        "Procurement teams argue that the market can help complete the design."
       ],
       "options": [
         {
-          "text": "Follow the standard appraisal and approval sequence without exceptions.",
+          "text": "Increase design maturity before procurement, even if approval takes longer.",
           "feedback": [
-            "Strengthens institutional credibility and decision discipline.",
-            "Slows procurement and exposes trade-offs publicly.",
-            "Irony: you have chosen rules, society’s least charismatic technology."
+            "You reduce rework, claims, and cost uncertainty.",
+            "The project loses some speed, but gains execution discipline."
           ],
-          "impact": { "econ": -1, "fiscal": -1, "envsoc": -1, "gov": -2, "delivery": 2 }
+          "impact": {
+            "design_maturity": -3,
+            "cost_delay": -2,
+            "contractual_stress": -1,
+            "political_continuity": 1
+          }
         },
         {
-          "text": "Request fast-track treatment with partial documentation and explicit risk notes.",
+          "text": "Proceed with a reference design and manage changes through supervision.",
           "feedback": [
-            "A middle path: keeps the system involved, but weakens its function.",
-            "Partial documentation often becomes the final documentation.",
-            "Irony: you have invented ‘controlled improvisation’."
+            "This looks practical and keeps the timetable alive.",
+            "The reference design may become a weak basis for price, scope, and accountability."
           ],
-          "impact": { "econ": 1, "fiscal": 1, "envsoc": 1, "gov": 1, "delivery": 0 }
+          "impact": {
+            "design_maturity": 2,
+            "cost_delay": 2,
+            "contractual_stress": 1,
+            "fiscal_exposure": 1
+          }
         },
         {
-          "text": "Seek a formal exemption to bypass the system and accelerate contracting.",
+          "text": "Let the delivery partner refine the design under the contract.",
           "feedback": [
-            "Fastest route; also the cleanest path to institutional lock-in.",
-            "Removes the very step designed to challenge optimism bias.",
-            "Irony: you have solved governance by deleting it."
+            "You accelerate procurement.",
+            "You buy information later, when the public sector has less leverage."
           ],
-          "impact": { "econ": 2, "fiscal": 2, "envsoc": 2, "gov": 3, "delivery": -1 }
+          "impact": {
+            "design_maturity": 3,
+            "cost_delay": 3,
+            "contractual_stress": 2,
+            "fiscal_exposure": 2
+          }
         }
       ]
     },
     {
       "id": 7,
-      "title": "Delivery Model: PPP as a Time Machine",
+      "title": "Delivery Model Choice",
       "context": [
-        "A PPP is proposed to accelerate procurement and smooth the fiscal profile.",
-        "There is limited experience with large co-financed concessions in your context."
+        "A PPP or concession model is proposed to accelerate delivery and reduce visible upfront budget pressure.",
+        "Technical maturity and risk allocation are still incomplete."
       ],
       "options": [
         {
-          "text": "Choose the delivery model only after engineering maturity clarifies risk and scope.",
+          "text": "Select the delivery model only after testing value for money and risk allocation under realistic assumptions.",
           "feedback": [
-            "Improves value-for-money analysis and risk allocation.",
-            "Slower; politically harder to sell.",
-            "Irony: you chose sequencing over spectacle."
+            "You protect the project from choosing a contract before knowing what needs to be contracted.",
+            "The process is slower, but the delivery model fits the project rather than the narrative."
           ],
-          "impact": { "econ": -1, "fiscal": -1, "envsoc": 0, "gov": -1, "delivery": 1 }
+          "impact": {
+            "fiscal_exposure": -2,
+            "contractual_stress": -2,
+            "institutional_erosion": -1,
+            "cost_delay": 1
+          }
         },
         {
-          "text": "Adopt a PPP early to accelerate procurement; let the concessionaire develop engineering under the contract.",
+          "text": "Adopt the model that maximizes implementation speed while documenting pending risks.",
           "feedback": [
-            "Fast-track approach; common in politically driven megaprojects.",
-            "Without mature studies, risk transfer becomes either fake or expensive.",
-            "Irony: you have traded time for future renegotiations."
+            "This keeps momentum and may be defensible politically.",
+            "Documented risks can still become transferred costs if nobody owns them."
           ],
-          "impact": { "econ": 1, "fiscal": 2, "envsoc": 0, "gov": 1, "delivery": 0 }
+          "impact": {
+            "cost_delay": 1,
+            "contractual_stress": 2,
+            "fiscal_exposure": 2,
+            "coordination": 1
+          }
         },
         {
-          "text": "Choose the model that minimizes upfront budget impact, even if it increases long-term commitments.",
+          "text": "Choose the model that minimizes upfront fiscal visibility and secures market interest.",
           "feedback": [
-            "Short-term fiscal optics improve.",
-            "Long-term fiscal exposure rises—often off-screen during approval.",
-            "Irony: you did not reduce cost; you changed when you admit it exists."
+            "The project becomes easier to launch.",
+            "The fiscal burden may reappear later as guarantees, payments, renegotiations, or contingent liabilities."
           ],
-          "impact": { "econ": 0, "fiscal": 3, "envsoc": 0, "gov": 1, "delivery": -1 }
+          "impact": {
+            "fiscal_exposure": 4,
+            "contractual_stress": 2,
+            "institutional_erosion": 1,
+            "economic_efficiency": 1
+          }
         }
       ]
     },
     {
       "id": 8,
-      "title": "Risk Allocation Under Thin Data",
+      "title": "Risk Allocation and the Contract",
       "context": [
-        "Geological uncertainty is high; early data is incomplete.",
-        "Market sounding suggests bidders will price unknown risks aggressively—or refuse to bid."
+        "The project faces risks that bidders cannot price confidently with current information.",
+        "The team must decide whether to delay, retain risk, or use flexible clauses."
       ],
       "options": [
         {
-          "text": "Delay procurement to reduce uncertainty and allocate risks transparently.",
+          "text": "Build a risk matrix linked to evidence, allocation principles, and decision rights before tender.",
           "feedback": [
-            "Best for cost control and disputes prevention.",
-            "Politically expensive: ‘why are you slowing the flagship?’",
-            "Irony: you have decided to pay for information before paying for claims."
+            "You make risk ownership explicit before the contract is signed.",
+            "This reduces ambiguity but may require more preparation."
           ],
-          "impact": { "econ": -1, "fiscal": -2, "envsoc": 0, "gov": -1, "delivery": 2 }
+          "impact": {
+            "contractual_stress": -3,
+            "fiscal_exposure": -2,
+            "coordination": -1,
+            "cost_delay": 1
+          }
         },
         {
-          "text": "Retain most construction/geological risks with the public sector to keep bids competitive.",
+          "text": "Retain hard-to-price risks in the public sector to maintain competition.",
           "feedback": [
-            "Enables procurement under uncertainty.",
-            "Transfers the downside to the budget and later parliamentary stress tests.",
-            "Irony: you have achieved competitive bids by guaranteeing you will pay for surprises."
+            "This can be reasonable when data is incomplete.",
+            "But the public sector must then budget, govern, and monitor those risks explicitly."
           ],
-          "impact": { "econ": 1, "fiscal": 3, "envsoc": 0, "gov": 1, "delivery": 1 }
+          "impact": {
+            "fiscal_exposure": 3,
+            "contractual_stress": 1,
+            "cost_delay": 2
+          }
         },
         {
-          "text": "Use flexible clauses for ‘additional works’ and remeasurement; manage through supervision later.",
+          "text": "Use flexible clauses for additional works, remeasurement, and future adjustments.",
           "feedback": [
-            "Feels pragmatic under uncertainty.",
-            "Creates strong incentives to expand scope and renegotiate prices.",
-            "Irony: you have written an invitation letter to future cost overruns."
+            "Flexibility feels pragmatic under uncertainty.",
+            "It can also become an invitation for claims, scope expansion, and permanent renegotiation."
           ],
-          "impact": { "econ": 1, "fiscal": 3, "envsoc": 0, "gov": 2, "delivery": 0 }
+          "impact": {
+            "contractual_stress": 4,
+            "fiscal_exposure": 3,
+            "cost_delay": 3,
+            "institutional_erosion": 1
+          }
         }
       ]
     },
     {
       "id": 9,
-      "title": "Financial Engineering: Bankability First",
+      "title": "Financing and Fiscal Exposure",
       "context": [
-        "A payment mechanism is proposed to mobilize domestic capital markets and ensure financing.",
-        "But payments are being locked in while costs are still uncertain."
+        "Financial instruments can improve bankability and help the project move forward.",
+        "However, the cost base is not yet fully reliable."
       ],
       "options": [
         {
-          "text": "Align financing strictly to verified cost estimates; avoid locking payments under uncertainty.",
+          "text": "Disclose affordability constraints, contingent liabilities, and fiscal scenarios before commitment.",
           "feedback": [
-            "Reduces fiscal and refinancing risk.",
-            "May delay bankability and reduce political comfort.",
-            "Irony: you chose boring finance, which is the only kind that works in crises."
+            "You protect fiscal credibility and reduce surprises.",
+            "This may weaken the political attractiveness of fast approval."
           ],
-          "impact": { "econ": 0, "fiscal": -2, "envsoc": 0, "gov": -1, "delivery": 1 }
+          "impact": {
+            "fiscal_exposure": -3,
+            "legitimacy": -1,
+            "political_continuity": 1,
+            "economic_efficiency": -1
+          }
         },
         {
-          "text": "Structure payments to ensure bankability; accept that adjustments may be needed later.",
+          "text": "Structure payments to secure bankability while keeping fiscal risks in technical annexes.",
           "feedback": [
-            "Solves the financing problem today.",
-            "Turns information gaps into renegotiation events tomorrow.",
-            "Irony: you have converted engineering uncertainty into a fiscal schedule."
+            "The project becomes easier to finance.",
+            "Fiscal risk is not eliminated; it is moved into a less visible part of the decision."
           ],
-          "impact": { "econ": 0, "fiscal": 2, "envsoc": 0, "gov": 1, "delivery": 0 }
+          "impact": {
+            "fiscal_exposure": 3,
+            "contractual_stress": 1,
+            "legitimacy": 1
+          }
         },
         {
-          "text": "Lock in long-term payment commitments to preserve momentum and reduce investor uncertainty.",
+          "text": "Lock long-term commitments early to reassure investors and preserve momentum.",
           "feedback": [
-            "Maximizes certainty for financiers.",
-            "Minimizes flexibility for the State when costs blow past early estimates.",
-            "Irony: you have purchased certainty by selling your future options."
+            "You improve certainty for financiers.",
+            "You reduce flexibility for the public sector when costs, scope, or demand assumptions change."
           ],
-          "impact": { "econ": 0, "fiscal": 3, "envsoc": 0, "gov": 1, "delivery": -1 }
+          "impact": {
+            "fiscal_exposure": 4,
+            "contractual_stress": 2,
+            "cost_delay": 1,
+            "political_continuity": 1
+          }
         }
       ]
     },
     {
       "id": 10,
-      "title": "The Point of No Return",
+      "title": "Lock-in and Course Correction",
       "context": [
-        "Political capital is invested. Institutions have moved. Procurement is underway.",
-        "Stopping would require more justification than continuing."
+        "The project is now politically visible, institutionally mobilized, and close to commitment.",
+        "Pausing would require explaining why earlier optimism should be revisited."
       ],
       "options": [
         {
-          "text": "Pause and reassess scope, costs, and safeguards before final commitment.",
+          "text": "Pause, rebaseline the project, and openly adjust scope, cost, risks, and governance arrangements.",
           "feedback": [
-            "Technically responsible: reduces lock-in and allows course correction.",
-            "Politically costly: looks like retreat.",
-            "Irony: you are about to do the hardest thing in government—change your mind."
+            "This is the most difficult choice politically.",
+            "It is also the clearest way to recover decision quality before implementation."
           ],
-          "impact": { "econ": -1, "fiscal": -1, "envsoc": -1, "gov": -1, "delivery": 2 }
+          "impact": {
+            "political_continuity": 2,
+            "legitimacy": -2,
+            "coordination": -1,
+            "cost_delay": -2,
+            "fiscal_exposure": -1,
+            "contractual_stress": -1
+          }
         },
         {
-          "text": "Proceed but quietly narrow scope and add controls (without changing the headline).",
+          "text": "Proceed while quietly narrowing scope and strengthening controls.",
           "feedback": [
-            "A realistic compromise: protects optics while improving some fundamentals.",
-            "May not be enough if early uncertainties are large.",
-            "Irony: you have chosen ‘reform by stealth’."
+            "This is a realistic compromise.",
+            "It may improve some fundamentals, but it leaves the original political narrative largely intact."
           ],
-          "impact": { "econ": 0, "fiscal": 1, "envsoc": 1, "gov": 0, "delivery": 1 }
+          "impact": {
+            "legitimacy": 1,
+            "coordination": 1,
+            "cost_delay": 1,
+            "fiscal_exposure": 1
+          }
         },
         {
-          "text": "Double down. The flagship must move; problems can be solved during implementation.",
+          "text": "Double down and solve problems during implementation.",
           "feedback": [
-            "Maximum momentum; minimum learning.",
-            "Highest likelihood of cost escalation, reactive mitigation, and fiscal clean-up.",
-            "Irony: congratulations—you have achieved inevitability."
+            "Momentum is preserved.",
+            "The implementation phase becomes the place where unresolved pre-investment risk finally becomes visible."
           ],
-          "impact": { "econ": 2, "fiscal": 3, "envsoc": 2, "gov": 2, "delivery": 0 }
+          "impact": {
+            "political_continuity": 1,
+            "cost_delay": 4,
+            "fiscal_exposure": 3,
+            "contractual_stress": 3,
+            "stakeholder_conflict": 2,
+            "operational_sustainability": 2
+          }
         }
       ]
     }
   ],
   "outcomes": [
     {
-      "id": "slow_sustainable",
-      "title": "Slow but Sustainable",
-      "when": "total<=10",
-      "summary": "You protected decision quality. The project is less glamorous on launch day, but far less painful in implementation.",
+      "id": "slower_more_resilient",
+      "title": "Slower but More Resilient",
+      "when": "total<=18",
+      "summary": "You accepted slower preparation in exchange for clearer information, stronger institutions, and more explicit risk ownership.",
+      "opinion": "This is rarely the easiest political path, but it is usually the path that protects long-term project performance. In megaprojects, speed is valuable only when the project is mature enough to absorb it.",
       "bullets": [
-        "Fewer claims and scope surprises",
-        "More credible fiscal commitments",
-        "Earlier mitigation of environmental/social risks"
+        "Risks are identified earlier, when they are still manageable.",
+        "Institutions retain their gatekeeping and coordination roles.",
+        "The project is more likely to remain credible during implementation and operation."
+      ],
+      "reflectionQuestions": [
+        "Which decision most improved the quality of the project?",
+        "What political cost would this path create in the real world?",
+        "How can institutions protect this slower but more robust path?"
       ]
     },
     {
-      "id": "bankable_fiscal",
-      "title": "Bankable but Fiscally Exposed",
-      "when": "fiscal>=9",
-      "summary": "You solved bankability under uncertainty by shifting downside to the budget. Implementation becomes a fiscal endurance test.",
+      "id": "bankable_but_risk_loaded",
+      "title": "Bankable but Risk-Loaded",
+      "when": "fiscal_exposure>=7 || contractual_stress>=7",
+      "summary": "The project becomes financeable and contractable, but significant uncertainty is embedded in fiscal commitments and contractual adjustment mechanisms.",
+      "opinion": "This result shows a classic megaproject pattern: bankability can be achieved before value for money is truly secured. The project moves forward, but the unresolved risks do not disappear; they migrate into budgets, contracts, renegotiations, and claims.",
       "bullets": [
-        "Long-term commitments grow quietly",
-        "Renegotiations ‘discover’ new needs",
-        "Budget flexibility shrinks"
+        "Financing certainty improves, but public-sector exposure increases.",
+        "Contract flexibility becomes a substitute for design maturity.",
+        "The main question becomes who pays when uncertainty resolves."
+      ],
+      "reflectionQuestions": [
+        "Which risks were made less visible by the financing or delivery model?",
+        "Who ultimately carries the downside: users, taxpayers, contractors, or future administrations?",
+        "At what point did bankability start replacing project quality?"
       ]
     },
     {
-      "id": "delivered_any_cost",
-      "title": "Delivered at Any Cost",
-      "when": "delivery>=8 && fiscal>=7",
-      "summary": "You optimized speed and procurement. The corridor gets built, and the clean-up becomes the real project.",
+      "id": "fast_approval_fragile_project",
+      "title": "Fast Approval, Fragile Project",
+      "when": "default",
+      "summary": "The project advances quickly, but the foundations for legitimacy, coordination, design maturity, and economic efficiency remain weak.",
+      "opinion": "This is the most common risk pattern in politically strategic megaprojects. No single decision looks irrational in isolation, but together they create lock-in before the project is ready. Implementation then becomes a costly process of discovering what pre-investment did not resolve.",
       "bullets": [
-        "Cost escalation becomes structurally likely",
-        "Claims management replaces planning",
-        "High-level political interventions become necessary"
-      ]
-    },
-    {
-      "id": "reactive_safeguards",
-      "title": "Reactive Safeguards, Escalating Conflict",
-      "when": "envsoc>=8",
-      "summary": "Environmental and social issues arrive late, loudly, and expensively. Mitigation is reactive, not strategic.",
-      "bullets": [
-        "Indirect impacts dominate the narrative",
-        "Mitigation lags behind construction",
-        "Trust erosion increases delivery risk"
-      ]
-    },
-    {
-      "id": "governance_exception",
-      "title": "The Exception Becomes the System",
-      "when": "gov>=8",
-      "summary": "Fast-tracking worked—by weakening gatekeeping. The project proceeds, but institutions lose their ability to say ‘wait’.",
-      "bullets": [
-        "Standards become optional under pressure",
-        "Accountability blurs across agencies",
-        "Future projects inherit the same shortcuts"
-      ]
-    },
-    {
-      "id": "political_success_econ_fragile",
-      "title": "Politically Successful, Economically Fragile",
-      "when": "econ>=8",
-      "summary": "You protected the political story. Later, demand and benefit shortfalls make the economic case look thinner than advertised.",
-      "bullets": [
-        "Benefits underperform optimistic narratives",
-        "Opportunity costs become visible ex post",
-        "Hard to recalibrate once built"
+        "Political continuity is protected in the short run.",
+        "Several risks are deferred into implementation.",
+        "The project remains vulnerable to overruns, conflict, weak legitimacy, and operational stress."
+      ],
+      "reflectionQuestions": [
+        "Which early shortcut seemed most reasonable at the time?",
+        "Which risk was transferred without being explicitly acknowledged?",
+        "What would have been the minimum intervention needed to change the trajectory?"
       ]
     }
   ]

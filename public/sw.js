@@ -1,6 +1,6 @@
-/* Minimal SW: caches app shell + game data for offline play */
-const CACHE_NAME = "fast-track-dilemma-v1";
-const ASSETS = ["/", "/manifest.json", "/game.json"];
+/* Fast-Track Dilemma / Megaproject LAB PWA cache */
+const CACHE_NAME = "fast-track-dilemma-v2";
+const ASSETS = ["/", "/manifest.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -17,7 +17,7 @@ self.addEventListener("activate", (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.map((k) => (k === CACHE_NAME ? null : caches.delete(k)))
+          keys.map((key) => (key === CACHE_NAME ? null : caches.delete(key)))
         )
       )
       .then(() => self.clients.claim())
@@ -25,23 +25,40 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  const req = event.request;
+  const request = event.request;
+  const url = new URL(request.url);
+
+  if (url.pathname === "/game.json") {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches
+            .open(CACHE_NAME)
+            .then((cache) => cache.put(request, copy))
+            .catch(() => {});
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
   event.respondWith(
-    caches
-      .match(req)
-      .then(
-        (cached) =>
-          cached ||
-          fetch(req)
-            .then((res) => {
-              const copy = res.clone();
-              caches
-                .open(CACHE_NAME)
-                .then((cache) => cache.put(req, copy))
-                .catch(() => {});
-              return res;
-            })
-            .catch(() => cached)
-      )
+    caches.match(request).then((cached) => {
+      return (
+        cached ||
+        fetch(request)
+          .then((response) => {
+            const copy = response.clone();
+            caches
+              .open(CACHE_NAME)
+              .then((cache) => cache.put(request, copy))
+              .catch(() => {});
+            return response;
+          })
+          .catch(() => cached)
+      );
+    })
   );
 });
